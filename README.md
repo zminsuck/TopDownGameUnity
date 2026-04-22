@@ -6,3 +6,20 @@
   <img src="https://img.shields.io/badge/Unity-FFFFFF?style=for-the-badge&logo=unity&logoColor=black">
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
 </p>
+
+### ✨ Key Features
+- [ ] 기본적인 핵심 기능 구현 완료
+- [ ] 1. 기본 조작 ( 플레이어 이동 및 시선 처리 )
+- [ ] UI/UX 개선 작업 중
+- [ ] 멀티플레이어 모드 지원 예정
+
+### 🚀 Getting Started
+```bash
+# 저장소 복제
+git clone git@github.com:zminsuck/TopDownGameUnity.git
+
+# 폴더 이동
+cd Pall
+
+# 실행
+start
