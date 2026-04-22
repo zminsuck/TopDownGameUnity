@@ -11,7 +11,8 @@
 
 ### ✨ Key Features
 - [ ] 기본적인 핵심 기능 구현 완료
-- [x] 1. 기본 조작 ( 플레이어 이동 및 시선 처리 )
+  - [x] 1. 기본 조작 ( 플레이어 이동 및 시선 처리 )
+  - [x] 2. 가상 카메라 구현 ( Top View 카메라 Player Move 고정 ) 
 
 ### 🚀 Getting Started
 ```bash
