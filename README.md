@@ -1,4 +1,4 @@
-<img width="1400" height="788" alt="image" src="https://github.com/user-attachments/assets/73a4041e-1fbd-45e5-9cf3-2cbafa90312c" /># 🎮 프로젝트 이름 (Top Down Game Unity)
+# 🎮 프로젝트 이름 (Top Down Game Unity)
 > 소울라이크류 탑 다운 액션 RPG 프로젝트
 
 ### 🛠 Tech Stack
