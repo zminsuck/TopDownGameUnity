@@ -1,10 +1,11 @@
-# 🎮 프로젝트 이름 (Top Down Game Unity)
+<img width="1400" height="788" alt="image" src="https://github.com/user-attachments/assets/73a4041e-1fbd-45e5-9cf3-2cbafa90312c" /># 🎮 프로젝트 이름 (Top Down Game Unity)
 > 소울라이크류 탑 다운 액션 RPG 프로젝트
 
 ### 🛠 Tech Stack
 <p align="left">
   <img src="https://img.shields.io/badge/Unity-FFFFFF?style=for-the-badge&logo=unity&logoColor=black">
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
+  <img src="[https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white](https://miro.medium.com/v2/resize:fit:1400/0*tpCahOqLF3Gg2JLi.png)">
 </p>
 
 ### ✨ Key Features
