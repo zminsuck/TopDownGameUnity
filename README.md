@@ -17,7 +17,7 @@
 git clone git@github.com:zminsuck/TopDownGameUnity.git
 
 # 폴더 이동
-cd Pall
+cd Pall/Game_git/TopDownGameUnity
 
 # 실행
-start
+start -> UnityTolls
