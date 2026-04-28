@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour, IDamageable
 
     [Header("HP")]
     public float maxHp = 100f;
+    public float HpRatio => _hp / maxHp;
     private float _hp;
 
     private CharacterController _cc;

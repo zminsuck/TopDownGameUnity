@@ -15,9 +15,12 @@ GameObject:
   - component: {fileID: 5003209580623458237}
   - component: {fileID: 9146929753780404463}
   - component: {fileID: 6517806544109335061}
+  - component: {fileID: 9193749159473417603}
+  - component: {fileID: 3189898236029835786}
+  - component: {fileID: 3853498364350692065}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -182,3 +185,64 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   attackMoveMultiplier: 0.3
+--- !u!114 &9193749159473417603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2645314930588464671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca3c2bf45ece2124a8c2202a25c433d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillDash
+  skillName: "\uC2A4\uD0AC"
+  cooldown: 3
+  staminaCost: 20
+  damage: 30
+  dashSpeed: 25
+  dashDuration: 0.2
+  hitRange: 1.2
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!114 &3189898236029835786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2645314930588464671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ade9e44d8d597241a114ba4d86afaad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillProjectile
+  skillName: "\uC2A4\uD0AC"
+  cooldown: 3
+  staminaCost: 20
+  damage: 30
+  projectilePrefab: {fileID: 0}
+  projectileSpeed: 15
+  projectileRange: 20
+--- !u!114 &3853498364350692065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2645314930588464671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db53cc5f2962aa64698c0b59ee6b0342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillSlash
+  skillName: "\uC2A4\uD0AC"
+  cooldown: 3
+  staminaCost: 20
+  damage: 30
+  slashRange: 3
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 8
