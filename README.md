@@ -45,13 +45,23 @@
 - [x] **생존 시스템**
   - [x] 플레이어 피격 처리
   - [x] 사망 시 씬 리로드
+- [x] **스킬 시스템**
+  - [x] Q — 광역 슬래시 (주변 360도 범위 공격)
+  - [x] E — 돌진 공격 (전방 대시 + 피격)
+  - [x] R — 프로젝타일 발사 (원거리 탄환)
+  - [x] 스킬별 쿨다운 관리
+- [x] **HUD**
+  - [x] HP 바 (좌측 하단)
+  - [x] 스태미나 바 (좌측 하단)
+  - [x] 스킬 슬롯 UI Q / E / R (하단 중앙)
+  - [x] 스킬 쿨다운 오버레이
 
 ### 🔲 예정 기능
-- [ ] 스킬 시스템 (Q / E / R 슬롯)
 - [ ] 랜덤 방 생성 (로그라이크 던전)
-- [ ] HP / 스태미나 HUD
-- [ ] 보스 패턴
-- [ ] 아이템 / 빌드 시스템
+- [ ] 보스 패턴 (페이즈, 특수 공격)
+- [ ] 아이템 / 드롭 시스템
+- [ ] 빌드 시스템 (에센스 조합)
+- [ ] 오디오 / VFX
 
 <br>
 
@@ -62,14 +72,24 @@ Assets/
 ├── _Scenes/
 ├── Scripts/
 │   ├── Player/
-│   │   ├── PlayerController.cs   # 이동, 회피, 조준, 피격
-│   │   └── CameraFollow.cs       # 카메라 팔로우
+│   │   ├── PlayerController.cs     # 이동, 회피, 조준, 피격
+│   │   └── CameraFollow.cs         # 카메라 팔로우
 │   ├── Combat/
-│   │   ├── ComboAttack.cs        # 콤보 공격, 히트박스
-│   │   └── IDamageable.cs        # 데미지 인터페이스
-│   └── Enemy/
-│       ├── EnemyAI.cs            # 적 AI 상태머신
-│       └── EnemyState.cs         # 상태 열거형
+│   │   ├── ComboAttack.cs          # 콤보 공격, 히트박스
+│   │   ├── Projectile.cs           # 프로젝타일 이동, 충돌
+│   │   └── IDamageable.cs          # 데미지 인터페이스
+│   ├── Enemy/
+│   │   ├── EnemyAI.cs              # 적 AI 상태머신
+│   │   └── EnemyState.cs           # 상태 열거형
+│   ├── Skills/
+│   │   ├── SkillBase.cs            # 스킬 추상 클래스
+│   │   ├── SkillSlotManager.cs     # Q/E/R 슬롯 관리
+│   │   └── Warrior/
+│   │       ├── SkillSlash.cs       # Q — 광역 슬래시
+│   │       ├── SkillDash.cs        # E — 돌진 공격
+│   │       └── SkillProjectile.cs  # R — 프로젝타일 발사
+│   └── UI/
+│       └── HUDController.cs        # HP, 스태미나, 스킬 슬롯 UI
 ├── Prefabs/
 ├── Art/
 └── Audio/
@@ -110,6 +130,9 @@ cd TopDownGameUnity
 | `Shift` | 회피 (스태미나 소모) |
 | `마우스 이동` | 조준 방향 |
 | `마우스 좌클릭` | 공격 (최대 3단 콤보) |
+| `Q` | 스킬 — 광역 슬래시 |
+| `E` | 스킬 — 돌진 공격 |
+| `R` | 스킬 — 프로젝타일 발사 |
 
 <br>
 
